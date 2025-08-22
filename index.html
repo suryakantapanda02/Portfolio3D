@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Developer - 3D Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">Alex Developer</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title floating-3d">Alex Developer</h1>
+                    <h2 class="hero-subtitle floating-3d" style="animation-delay: 0.2s;">3D Web Developer</h2>
+                    <p class="hero-description floating-3d" style="animation-delay: 0.4s;">Creating immersive web experiences with cutting-edge animations</p>
+                    <div class="hero-buttons floating-3d" style="animation-delay: 0.6s;">
+                        <a href="#projects" class="btn btn-primary-3d">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-3d">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card-3d">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm a creative full stack developer specializing in 3D web experiences and modern animations. 
+                            With 5+ years of experience, I blend technical expertise with artistic vision to create engaging digital solutions.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item-3d">
+                                <div class="highlight-icon">🚀</div>
+                                <p>5+ years in 3D web development</p>
+                            </div>
+                            <div class="highlight-item-3d">
+                                <div class="highlight-icon">⚡</div>
+                                <p>Expert in React, Three.js, and modern animations</p>
+                            </div>
+                            <div class="highlight-item-3d">
+                                <div class="highlight-icon">🎨</div>
+                                <p>Passionate about immersive user experiences</p>
+                            </div>
+                            <div class="highlight-item-3d">
+                                <div class="highlight-icon">📊</div>
+                                <p>Specialized in performance-optimized 3D graphics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Immersive 3D experiences and modern web applications</p>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next immersive web project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item-3d">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>alex@developer.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item-3d">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item-3d">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form-3d" id="contact-form">
+                    <div class="form-group-3d">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input-3d" required>
+                        <div class="form-error" id="name-error"></div>
+                    </div>
+                    <div class="form-group-3d">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input-3d" required>
+                        <div class="form-error" id="email-error"></div>
+                    </div>
+                    <div class="form-group-3d">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input-3d" rows="6" required></textarea>
+                        <div class="form-error" id="message-error"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary-3d btn-submit">Send Message</button>
+                    <div class="form-success hidden" id="form-success">
+                        <p>Thank you! Your message has been sent successfully.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Alex Developer</h3>
+                    <p>3D Web Developer creating immersive digital experiences</p>
+                </div>
+                <div class="social-links" id="social-links">
+                    <!-- Social links will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alex Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
